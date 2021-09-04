@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>核酸检测</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+
+			.body {
+				position: relative;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+			}
+
+			#img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+			}
+
+			#txt {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				color: #08a25c;
+				z-index: 9;
+			}
+
+			.txt-h1 {
+				position: absolute;
+				bottom: 8%;
+				left: 55%;
+				transform: translateX(-50%);
+				font-size: 120px;
+				font-weight: bold;
+				 animation: myAnimation 1.2s infinite linear
+				
+			}
+
+			.txt-h2 {
+				position: absolute;
+				bottom: 4%;
+				left: 50%;
+				transform: translateX(-50%);
+				font-size: 38px;
+			}
+			.txt-h3 {
+				position: absolute;
+				bottom: -10%;
+				right: 5%;
+				font-size: 38px;
+				color: #000;
+			}
+			@keyframes myAnimation {
+			  0% {
+			    opacity: 0
+			  }
+			  50% {
+			    opacity: 0.5
+			  }
+			  100% {
+			    opacity: 1
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="body">
+			<div id="img">
+				<img src="img/3.jpg">
+			</div>
+			<div id="txt">
+				<p class="txt-h1">阴性</p>
+				<p class="txt-h2">距离本次检测已过&nbsp;3&nbsp;天</p>
+				<p class="txt-h3">2021-9-2</p>
+			</div>
+
+		</div>
+
+
+	</body>
+</html>
